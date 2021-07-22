@@ -1,0 +1,100 @@
+:root {
+    --primary: #dddddd;
+    --dark: #333;
+    --light: #fff;
+    --dark_blue: #003A99;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: var(--dark_blue) 5px solid;
+    padding: 1rem;
+    height: 2em;
+}
+
+header img {
+    width: 25rem;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: black;
+    border: 2px black solid;
+    padding: .8em;
+    border-radius: 2em;
+}
+
+.link a:hover {
+    background-color: black;
+    color: var(--primary);
+}
+
+@media (max-width: 900px) {
+    header img {
+        display: none;
+    }
+}  
+
+
+/* footer section  */
+
+footer {
+    margin-top: 3em;
+    padding: 3em;
+    border-top: var(--dark_blue) 5px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.left_footer {
+    margin-right: 6em;
+}
+
+.facebook_img img{
+    width: 300px;
+    height: 90px;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+.trek_img img{
+    width: 300px;
+    height: 90px;
+    margin-top: 1em;
+}
+
+.electra_img img {
+    width: 300px;
+    height: 90px;
+    margin-top: 1em;
+}
+
+.right_footer li {
+    margin-bottom: .5em;
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_footer {
+        margin-right:0;
+    }
+}

@@ -1,0 +1,82 @@
+:root {
+    --secondary: #f5f5dc;
+    --primary: rgb(29, 49, 49);
+}
+
+html {
+    background-color: var(--primary);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: black;
+    /* background-color: aqua; */
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: bisque; */
+    
+}
+
+.top_card {
+    background-color: var(--secondary);
+    padding: 1em 3em;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.portfolio_section {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.project_boxs {
+    border-radius: 2em;
+    border: solid 3px var(--primary);
+    margin: 1em 1.5em .5em 1.5em;
+    padding: .5em;
+    width: 80vw;
+    
+}
+
+.basic {
+    margin-top: 2em;
+}
+
+.personal {
+    margin-bottom: 2em;
+}
+
+.project_boxs h1 {
+    margin: .5em .5em 0em .35em;
+    font-size: 4vw;
+}
+.project_boxs p {
+     margin: 0em .5em .5em .5em;
+     font-size: 3vw
+ }
+
+ .project_boxs h2 {
+     margin: 1em .5em .5em .5em;
+     font-size: 3vw;
+ }
+
+
+ .about_me {
+     height: 400px;
+     background-color: aqua;
+ }
